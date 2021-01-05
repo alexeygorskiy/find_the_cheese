@@ -22,4 +22,6 @@ The problem is formulated as a finite undiscounted episodic MDP. To add difficul
 An interesting consequence of having a negative reward on every transition in this problem is that in the beginning the agent is motivated to go where it hasn't been before, i.e. explore the gridworld. This is because the longer time it spends in an area, the lower the expected reward will become for those tiles and the agent will move towards unexplored tiles (unexplored tiles have an initiated value of zero).
 
 
-
+## This Project Was Built Using
+- Pyglet (graphics)
+- Numpy (gridworld representation using a matrix)
