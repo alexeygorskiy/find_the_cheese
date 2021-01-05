@@ -17,7 +17,7 @@ This problem is similar to the gridworld problem described in chapter 4 of
 - The gridworld is 48x40 (rows x columns).
 
 
-The problem is formulated as a finite undiscounted episodic MDP. To add difficulty to the problem the agent can only see at most 2 tiles in any direction and also starts in a random position every time. Every frame the value of all the visible tiles is updated using the value iteration algorithm from chapter 4. As the agent explores the gridworld the value function will eventually converge. Using the greedy policy with respect to the value function, the agent will eventually be able to find the cheese from anywhere using the shortest possible path every time.
+The problem is formulated as a finite undiscounted episodic MDP. To add difficulty to the problem the agent can only see at most 2 tiles in any direction and also starts in a random position every time. Every frame the value of all the visible tiles is updated using the value iteration algorithm from chapter 4. As the agent explores the gridworld the value function will eventually converge. Using the greedy policy with respect to the value function, the agent will eventually be able to find the terminal state from anywhere using the shortest possible path every time.
 
 An interesting consequence of having a negative reward on every transition in this problem is that in the beginning the agent is motivated to go where it hasn't been before, i.e. explore the gridworld. This is because the longer time it spends in an area, the lower the expected reward will become for those tiles and the agent will move towards unexplored tiles (unexplored tiles have an initiated value of zero).
 
